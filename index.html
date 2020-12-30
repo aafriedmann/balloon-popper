@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bubble Popper!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class='container'>
+        <div class="balloon" id="alef" onclick="pop('alef'); popSound()">
+            <img src="./media/alef.jpg">
+        </div>
+
+        <div class="balloon" id="bet" onclick="pop('bet'); popSound()">
+            <img src="./media/bet.jpg">
+        </div>
+
+        <div class="balloon" id="gimel" onclick="pop('gimel'); popSound()">
+            <img src='./media/gimel.jpg'>
+        </div>
+
+        <div class="balloon" id="daled" onclick="pop('daled'); popSound()">
+            <img src="./media/daled.jpg">
+        </div>
+
+        <div class="balloon" id="hey" onclick="pop('hey'); popSound()">
+            <img src='./media/hey.jpg'>
+        </div>
+
+        <div class="balloon" id="lamed" onclick="pop('lamed'); popSound()">
+            <img src='./media/lamed.jpg'>
+        </div>
+
+        <div class="balloon" id="yud" onclick="pop('yud'); popSound()">
+            <img src='./media/yud.jpg'>
+        </div>
+    </div>
+
+    <img id="star" src="./media/star.jpg" onclick="fireworksSound(); fireworksDisplay()">
+
+    <div id="fireworks">
+        
+    </div>
+
+
+
+    <audio id="pop-sound">
+        <source src="media/balloon-sound.wav" type="audio/wav">
+    </audio>
+
+    <audio id="fireworks-sound">
+        <source src="media/fireworks.wav" type="audio/wav">
+    </audio>
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
